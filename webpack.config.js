@@ -12,17 +12,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'Webpack Template',
-        filename: 'index.html',
-        template: 'src/template.html',
+      title: 'Webpack Template',
+      filename: 'index.html',
+      template: 'src/template.html',
     }),
   ],
   module: {
     rules: [
-        {
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader'],
-        },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
 };
